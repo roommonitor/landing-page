@@ -7,6 +7,17 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <meta
+      name="description"
+      content="Room Monitor is a device that allows you to be aware of
+    the noise levels in your short term rentals"
+    />
+    <meta
+      name="og:title"
+      property="og:title"
+      content="Room Monitor is a device that allows you to be aware of
+    the noise levels in your short term rentals"
+    />
 
     <link
       href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900"
@@ -29,6 +40,8 @@
     <link rel="stylesheet" href="css/aos.css" />
 
     <link rel="stylesheet" href="css/style.css" />
+
+    <title>Room Monitor</title>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <div class="site-wrap">
@@ -51,15 +64,27 @@
               <a href="index.html">Room Monitor</a>
             </div>
 
-            <div class="ml-auto w-25">
+            <div class="mx-auto text-center">
               <nav
                 class="site-navigation position-relative text-right"
                 role="navigation"
               >
                 <ul
-                  class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0"
-                ></ul>
+                  class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0"
+                >
+                  <li><a href="#home-section" class="nav-link">Home</a></li>
+                  <li>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                  </li>
+                </ul>
               </nav>
+            </div>
+
+            <div class="ml-auto w-25">
+              <nav
+                class="site-navigation position-relative text-right"
+                role="navigation"
+              ></nav>
               <a
                 href="#"
                 class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"
@@ -71,16 +96,19 @@
       </header>
 
       <div class="intro-section" id="home-section">
-        <div
-          class="slide-1"
-          style="background-image: url('images/hero_1.jpg');"
-          data-stellar-background-ratio="0.5"
-        >
+        <div class="slide-1" data-stellar-background-ratio="0.5">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-12">
                 <div class="row align-items-center">
                   <div class="col-lg-6 mb-4">
+                    <figure class="m-0">
+                      <img
+                        src="images/admin_devices.png"
+                        alt="Image"
+                        class="img-fluid"
+                      />
+                    </figure>
                     <h1 data-aos="fade-up" data-aos-delay="100">
                       Protect Your Property
                     </h1>
@@ -98,43 +126,161 @@
                     data-aos="fade-up"
                     data-aos-delay="500"
                   >
-                    <form
-                      action="https://mailthis.to/safesoundmonitor@gmail.com"
-                      method="POST"
-                      class="form-box"
-                    >
-                      <h3 class="h4 text-black mb-4">Learn More!</h3>
+                    <form method="POST" class="form-box" id="details-form">
+                      <h3 class="h4 text-black mb-4">
+                        Buy one and get 10% off
+                      </h3>
                       <div class="form-group">
                         <input
                           type="text"
                           name="Name"
+                          id="form-name"
                           class="form-control"
-                          placeholder="name"
+                          placeholder="Name"
                         />
                       </div>
                       <div class="form-group">
                         <input
                           type="email"
                           name="_replyto"
+                          id="form-email"
                           class="form-control"
-                          placeholder="Email Addresss"
+                          placeholder="Email Address"
                         />
                       </div>
-                      <div class="form-group">
-                        <textarea
-                          type="text-are"
-                          name="comment"
-                          class="form-control"
-                          placeholder="We want to answer any questions you may have."
-                        ></textarea>
+                      <div class="form-error" id="form-error">
+                        <div>
+                          Please enter your name and email address to continue
+                        </div>
                       </div>
-
-                      <input
-                        type="submit"
-                        class="btn btn-primary btn-pill"
-                        value="Send"
-                      />
+                      <div id="form-submit-container">
+                        <input
+                          type="submit"
+                          id="form-submit"
+                          class="btn btn-black btn-pill"
+                          value="Proceed To Cart"
+                          on
+                        />
+                        <div
+                          id="form-submit-catch"
+                          style="position:absolute; left:0; right:0; top:0; bottom:0;"
+                        ></div>
+                      </div>
                     </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-section pb-0" id="faq">
+        <div class="container">
+          <div
+            class="row mb-5 justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay=""
+          >
+            <div class="col-lg-7 text-center">
+              <h2 class="section-title">FAQ</h2>
+            </div>
+          </div>
+          <div class="row faq">
+            <div
+              class="col-lg-12 ml-auto align-self-start"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="p-4 rounded bg-white ">
+                <div
+                  class="align-items-center custom-icon-wrap custom-icon-light mb-3"
+                >
+                  <div class="mr-3">
+                    How does Roomonitor noisealarm work?
+                  </div>
+                  <div>
+                    <h3 class="m-0">
+                      Noisealarm is the Roomonitor solution to monitor the noise
+                      of your short term rentals maintaining the privacy of your
+                      guests totally safe. Our plug & play system allows you to
+                      start monitoring the noise pressure of your property(s)
+                      immediately after receiving and install the sensor. You
+                      just need to plug it into any power socket and connect it
+                      to the property’s wifi.
+                    </h3>
+                  </div>
+                </div>
+
+                <div
+                  class="align-items-center custom-icon-wrap custom-icon-light mb-3"
+                >
+                  <div class="mr-3">
+                    How many devices do I need?
+                  </div>
+                  <div>
+                    <h3 class="m-0">
+                      A sensor is normally enough to cover up to 100 m2 surface.
+                      We recommend having a device installed in all those places
+                      in which people tend to congregate. We are at your
+                      disposal for any specific consult you may need about and
+                      to provide a tailored solution.
+                    </h3>
+                  </div>
+                </div>
+
+                <div
+                  class="align-items-center custom-icon-wrap custom-icon-light mb-3"
+                >
+                  <div class="mr-3">How do I receive the alarms?</div>
+                  <div>
+                    <h3 class="m-0">
+                      Our system will notify you when a noise violation is
+                      occurring in the property with an SMS and a Phone Call.
+                      You can either notify the guest directly by using our open
+                      API and integrate your PMS with Roomonitor system, or
+                      pre-assign the number you want to receive the
+                      notification.
+                    </h3>
+                  </div>
+                </div>
+
+                <div
+                  class="align-items-center custom-icon-wrap custom-icon-light mb-3"
+                >
+                  <div class="mr-3">
+                    What do I do if I receive an alarm?
+                  </div>
+                  <div>
+                    <h3 class="m-0">
+                      Our recommended action to take is to contact the guest
+                      directly and explain the situation over the phone. In most
+                      of the cases, guests catch the message and they
+                      immediately stop exceeding the threshold. Thanks to Noise
+                      alarm graph you will see in real time how the noise
+                      decrease. For those cases in which approaching the issue
+                      over the phone doesn’t give any result the best thing to
+                      do is show up at the apartment. If you aim a peaceful
+                      sleep at night we remind you our alarm assistant service:
+                      leave in our hands the alarms calls and we will manage all
+                      the noise issues for you.
+                    </h3>
+                  </div>
+                </div>
+
+                <div
+                  class="align-items-center custom-icon-wrap custom-icon-light mb-3"
+                >
+                  <div class="mr-3">
+                    Can I install the device myself?
+                  </div>
+                  <div>
+                    <h3 class="m-0">
+                      Absolutely! The device is plug & play and in less than 5
+                      minutes you can have the noise alarm system ready to
+                      monitor. You only need a power socket, a WiFi network and
+                      a mobile phone or computer to set up the device. We will
+                      be helping you step by step if you need to.
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -144,7 +290,7 @@
       </div>
     </div>
     <!-- .site-wrap -->
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
